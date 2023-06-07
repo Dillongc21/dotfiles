@@ -1,0 +1,9 @@
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export FW_USERNAME=dillonc@fusionware.com
+export FW_PASSWORD=Wasabi112
+autoload -Uz compinit && compinit
+
+alias DeployDocsDev="bash ~/Documents/fusionware/scripts/DocsDeployDev.sh"
+alias DeployDev="bash ~/Documents/fusionware/scripts/fusion-dev.sh"
+alias chrome="open -a 'Google Chrome'"
