@@ -106,6 +106,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
 
+
+function mkscr() {
+	touch $1 && chmod 755 $1
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f "/Users/dillonchristensen/.ghcup/env" ] && source "/Users/dillonchristensen/.ghcup/env" # ghcup-env
